@@ -1,0 +1,17 @@
+Email Archive PowerShell commend
+
+first enable the MRM policy in Microsoft Preview, afterwards follow the commend
+
+1.	Get-Module ExchangeOnlineManagement -ListAvailable
+2.	ExchangeOnlineManagement 3.9.2
+3.	Uninstall-Module ExchangeOnlineManagement -AllVersions -Force
+4.	Install-Module ExchangeOnlineManagement -Scope AllUsers -Force
+5.	Get-Module ExchangeOnlineManagement -ListAvailable
+6.	Connect-ExchangeOnline
+
+7.	Enable-Mailbox abc@test.com -AutoExpandingArchive 
+
+	*Check the status should showing true
+8.	Get-Mailbox abc@test.com | FL AutoExpandingArchiveEnabled 
+9.	Enable-Mailbox vipin.sachdeva@acobloom.com -AutoExpandingArchive
+10.	Start-ManagedFolderAssistant -Identity vipin.sachdeva@acobloom.com
