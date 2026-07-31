@@ -13,5 +13,5 @@ first enable the MRM policy in Microsoft Preview, afterwards follow the commend
 
 	*Check the status should showing true
 8.	Get-Mailbox abc@test.com | FL AutoExpandingArchiveEnabled 
-9.	Enable-Mailbox vipin.sachdeva@acobloom.com -AutoExpandingArchive
-10.	Start-ManagedFolderAssistant -Identity vipin.sachdeva@acobloom.com
+9.	Enable-Mailbox abc@test.com -AutoExpandingArchive
+10.	Start-ManagedFolderAssistant -Identity abc@test.com
